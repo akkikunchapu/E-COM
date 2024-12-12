@@ -1,0 +1,238 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8B0000; /* Royal Red */
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: #8B0000; /* Royal Red */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: linear-gradient(90deg, #8B0000, #B22222);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #6a0000, #8B0000);
+    transform: scale(1.05);
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-links li a:hover {
+    background-color: #8B0000;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/homebg.png") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    background: linear-gradient(90deg, #8B0000, #B22222);
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(90deg, #6a0000, #8B0000);
+}
+
+/* Products Section */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.products h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-size: 1.6em;
+    color: #8B0000;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #FFD700;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}

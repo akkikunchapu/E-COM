@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #fefefe, #f2f2f2);
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FF4500; /* Vibrant Orange */
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: #FF4500; /* Vibrant Orange */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+button {
+    background-color: #FF4500;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #E63900;
+    transform: scale(1.05);
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #FF4500;
+    color: #fff;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #f9f9f9, #fff);
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.about-us p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.contact-us h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+.contact-us p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, #fefefe, #f2f2f2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #FF4500;
+    background-color: #fff;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #FF4500;
+}
+
+footer a:hover {
+    color: #E63900;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form {
+        width: 95%;
+    }
+
+    .about-us p,
+    .contact-us p {
+        font-size: 1.2em;
+    }
+}
